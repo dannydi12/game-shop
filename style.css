@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #dddddd;
+}
+
+/* Item card and item preview styles */
+.item-catalog {
+  display: flex;
+}
+
+.list-of-items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.item-preview {
+  width: 30%;
+  margin-left: 10px;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 10px;
+  background-color: #55B3C5;    
+  color: white;
+}
+
+.item-card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+
+.item-title, .preview-item-title {
+  text-align: center;
+}
+
+.item-image {
+  width: 70%;
+  padding: 30px;
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.item-price, .preview-item-price {
+  text-align: center;
+  margin: auto auto 10px auto;
+}
+
+.item-button, .item-preview-button {
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.item-button:hover, .item-preview-button:hover {
+  cursor: pointer;
+  background-color: #55B3C5;
+  color: white;
+}
+
+.preview-item-card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+
+.preview-item-image {
+  width: 100%;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.preview-item-description {
+  text-align: left;
+}
+
+.preview-item-stock, .preview-item-price {
+  margin-top: 10px;
+}
+
+/* Shopping cart styles */
+.shopping-cart {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  
+  /* added these two lines below */
+  flex-wrap: wrap;
+  margin: 10px 0;
+
+  background-color: white;
+  border: 1px solid #dddddd;
+}
+
+/* Tablet viewport */
+@media (min-width: 600px) and (max-width: 960px) { 
+  .item-card {
+    width: 50%;
+  }
+}
+
+/* Large screen viewport */
+@media (min-width: 961px) {
+  .item-card {
+    width: 33.33%;
+  }
+}
